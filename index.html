@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/906e7028b4.js" crossorigin="anonymous"></script>
+    <title>Snake-Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="home-page">
+        <h3><i>SNAKE MANIA</i></h3>
+        <img src="../Snake-Game/image/snake-front-page.png">
+        <p id = "speed">Choose the speed of snake</p>
+        <div id="speed-button">
+            <button>2</button>
+            <button>4</button>
+            <button>6</button>
+            <button>8</button>
+            <button>10</button>
+        </div>
+        <h2 id="inst-h2">HOW TO PLAY</h2>
+        <div id=instructions>
+            <div class="inst"><i class="fas fa-chevron-left"></i>
+                <p>TO MOVE LEFT</p>
+            </div>
+            <div class="inst"><i class="fas fa-chevron-up"></i>
+                <p>TO MOVE UP</p>
+            </div>
+            <div class="inst"><i class="fas fa-chevron-right"></i>
+                <p>TO MOVE RIGHT</p>
+            </div>
+            <div class="inst"><i class="fas fa-chevron-down"></i>
+                <p>TO MOVE DOWN</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div id = "board-body">
+        <div id="board"></div>
+        <div id="score-board">
+            <div id = "high-score-num-1">High Score: <span id="high-score-num-2"></span></div>
+            <div id = "score-num-1">Score: <span id="score-num-2">0</span></div>
+        </div>
+    </div>
+
+    <div id="game-over">
+        <h2>Game Over</h2>
+        <div id="game-over-score">Your Score: <span id = "game-over-score-display">0</span></div>
+        <p>Press any key to play again...</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

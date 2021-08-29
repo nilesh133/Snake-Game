@@ -1,0 +1,258 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(8, 57, 73);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#home-page{
+    padding: 10px 0;
+    margin: 40px;
+    background: rgba(0, 0, 0, 0.6)url("../Snake-Game/image/home-page-background.png");
+    width: 85vmin;
+    height: 85vmin;
+    border: 1px solid black;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-blend-mode: darken;
+    box-shadow:10px 10px 10px black;
+}
+
+#home-page img{
+    width: 150px;
+    height: 150px;
+    box-shadow: 3px 3px 5px black,  -3px -3px 5px black;
+    border-radius: 50%;
+}
+
+#home-page h3{
+    font-family: 'Arimo', sans-serif;
+    font-size: 40px;
+    font-weight: bolder;
+    padding: 10px;
+    background-image: linear-gradient(to right, rgb(150, 150, 15), orange);
+    text-shadow: 1px 1px black;
+    letter-spacing: 4px;
+    color: orangered;
+    text-shadow: 3px 3px 2px black;
+    margin: 20px 0 25px 0;
+}
+
+#home-page #speed{
+    margin: 40px 0 15px 0;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px black;
+    background-color: black;
+    padding: 7px 10px;
+    letter-spacing: 3px;
+}
+
+#speed-button{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+#speed-button button{
+    margin-right: 25px;
+    padding: 10px 21px;
+    font-size: 25px;
+    border: none;
+    outline: none;
+    background-image: linear-gradient(to right, rgb(150, 150, 15), orange);
+    color: white;
+    border-radius: 4px;
+    color: black;
+    font-weight: bold;
+}
+/*.body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}*/
+
+#instructions{
+    padding: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    
+}
+
+.fas{
+    background-color: black;
+    color: white;
+    font-size: 20px;
+}
+
+.fa-chevron-left, .fa-chevron-right{
+    margin-bottom: 5px;
+    margin-right: 5px;
+    padding: 12px 16px;
+}
+.fa-chevron-up, .fa-chevron-down{
+    margin-bottom: 5px;
+    margin-right: 5px;
+    padding: 12px 13px;
+}
+
+#inst-h2{
+    font-size: 17px;
+    color: white;
+    margin-bottom: 0;
+    margin-top: 20px;
+    border: 2px solid white;
+    padding: 8px;
+    text-shadow: 2px 2px 2px black;
+    margin: 65px 0 0px 0;
+    letter-spacing: 3px;
+}
+
+#instructions p{
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-family: 'Arimo', sans-serif;
+    text-shadow: 2px 2px 2px black;
+    margin: 8px 0 0 0;
+    background-color: black;
+    padding: 4px 5px;
+}
+
+.inst{
+    margin: 10px;
+}
+
+#board-body{
+    display: flex;
+    justify-content: space-around;
+}
+
+#board{
+    background-color: black;
+    width: 0vmin;
+    height: 0vmin;
+    display: grid;
+    grid-template-columns: repeat(20,1fr);
+    grid-template-rows: repeat(20,1fr);
+}
+
+#score-board{
+    background-color:rgb(9, 99, 9);
+    height: 0;
+    width: 0;
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    font-size: 20px;
+    color: white;
+    line-height: 2;
+    font-family: 'Quicksand', sans-serif;
+    overflow: hidden;
+    box-shadow: 7px 7px 5px rgb(2, 48, 2) inset, -7px -7px 5px rgb(2, 48, 2) inset;
+}
+
+#high-score-num-1{
+    font-size: 25px;
+    padding: 10px 0 10px 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+#score-num-1{
+    font-size: 25px;
+    padding: 10px 0 10px 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+}
+
+.head{
+    border-radius: 30%;
+    background-image: linear-gradient(to right, rgb(35, 119, 10), rgb(3, 78, 3));
+}
+
+.snake{
+    background: linear-gradient(to right, orangered, orange);
+    /*animation: glowes 1s ease-in-out infinite alternate;*/
+}
+
+.food{
+    border-radius: 50%;
+    background-color: red;
+    border-left-width: 3px;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+      box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    
+    to {
+      box-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }
+
+@keyframes glowes {
+    from {
+      box-shadow: 0 0 2px #fff, 0 0 3px #fff, 0 0 5px orangered, 0 0 7px orangered, 0 0 10px orangered, 0 0 12px orangered, 0 0 15px orangered;
+    }
+    
+    to {
+      box-shadow: 0 0 2px #fff, 0 0 3px orangered, 0 0 5px orangered, 0 0 7px orangered, 0 0 10px orangered, 0 0 12px orangered, 0 0 15px orangered;
+    }
+  }
+
+#game-over{
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    height: 0;
+    width: 0;
+    background-image: linear-gradient(to right, green, rgb(4, 59, 4));
+    overflow: hidden;
+    box-shadow: 5px 5px 5px black;
+}
+
+#game-over h2{
+    font-size: 50px;
+    font-weight: bolder;
+    color: white;
+    margin: 0 0 30px 0;
+    text-shadow: 3px 3px 3px black;
+    color: orangered;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+#game-over-score{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 3px 3px 3px black;
+}
+
+#game-over p{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 3px 3px 3px black;
+}
+
